@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "3.4.0",
+  "data": {
+    "sources": [
+      {
+        "dataType": "raw",
+        "channels": [
+          {
+            "name": "ecg",
+            "unit": { "text": "мВ", "scale": 0.001 },
+            "maxSignalCount": 1,
+            "variants": [
+              {
+                "signals": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "view": {
+    "items": [
+      {
+        "type": "canvas",
+        "items": [
+          {
+            "type": "chart:offline:base",
+            "sectors": {
+              "leftWidth": "10px",
+              "rightWidth": "10px",
+              "topHeight": "10px",
+              "bottomHeight": "10px"
+            },
+            "content": [{ "name": "grid", "settings": { "view": "svg-double" } }],
+            "sources": [
+              {
+                "channels": [
+                  {
+                    "id": 0,
+                    "variants": [
+                      {
+                        "signals": 1,
+                        "isolines": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
