@@ -326,17 +326,18 @@ createApp(Graph).mount("#app");
   </Tab>
 </Tabs>
 
-:::warning 
+:::warning
 Важно отметить, что у script должен быть прописан type=module
 :::
 
-
-
 import { Visualizator } from '../components/DoubleCanvas/App';
 
+<Visualizator />
 
 
-  <Visualizator />
+import  ChartSelector  from '../components/ChartSelector/ChartSelector';
+
+<ChartSelector />
 
 
 

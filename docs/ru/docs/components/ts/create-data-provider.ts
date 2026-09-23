@@ -1,5 +1,5 @@
 import { JagmChartDataProvider, JagmPreparedDataProvider, JagmRawDataProvider } from "@incartdev/jagm-chart";
-import { parsePreparedMarks } from "@/ts/marks/parse-prepared-marks";
+import { parsePreparedMarks } from "../ts/marks/parse-prepared-marks";
 
 export function createDataProvider(dataType: string): JagmChartDataProvider {
   switch (dataType) {

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "3.4.1",
+  "data": {
+    "sources": [
+      {
+        "channels": [
+          {
+            "name": "ecg",
+            "frequency": 50,
+            "maxSignalCount": 1,
+            "variants": [
+              {
+                "signals": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "view": {
+    "items": [
+      {
+        "type": "canvas",
+        "items": [
+          {
+            "type": "chart:online:base",
+            "sectors": {
+              "bottomHeight": "10px",
+              "topHeight": "10px",
+              "leftWidth": "10px",
+              "rightWidth": "10px"
+            },
+            "content": [
+              { "name": "grid" },
+              { "name": "leadRay" },
+              {
+                "name": "signals",
+                "settings": {
+                  "scaleX": {
+                    "type": "static",
+                    "values": [20]
+                  }
+                }
+              }
+            ],
+            "sources": [
+              {
+                "channels": [
+                  {
+                    "variants": [
+                      {
+                        "isolines": 1,
+                        "signals": [{ "color": "#026ce5", "drawMode": "roll" }]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

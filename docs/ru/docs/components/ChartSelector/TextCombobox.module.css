@@ -1,0 +1,29 @@
+.textCombobox {
+  display: inline-block;
+}
+
+.comboBox {
+  width: 100%;
+  height: 26px;
+  flex: 0 1 auto;
+  border-radius: 5px;
+  border: 2px solid #999999;
+  background-color: #ffffff;
+  padding: 0 24px 0 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8em;
+  color: #000000;
+  text-transform: capitalize;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24'><path fill='%23000' d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 2px center;
+  background-size: 22px 22px;
+
+  &:focus {
+    border-color: #666666;
+  }
+}

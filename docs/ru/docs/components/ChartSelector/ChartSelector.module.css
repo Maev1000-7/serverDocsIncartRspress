@@ -1,0 +1,15 @@
+.canvasWrap {
+  height: 200px;
+  position: relative;
+}
+
+.chartSelectorLabel {
+  font-size: 0.8em;
+}
+
+.chartSelector {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 5px;
+}

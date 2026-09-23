@@ -1,6 +1,6 @@
-// declare module '*.module.css' {
-//   const classes: { [key: string]: string };
-//   return classes;
-// }
+declare module '*.module.css' {
+  const classes: { [className: string]: string };
+  export default classes;
+}
 
 
