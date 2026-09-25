@@ -15,6 +15,7 @@ export default defineConfig({
       description: 'Сайт на Rspress',
     }
   ],
+  base: '/rspress/',
 
   builderConfig: {
     server: {  
